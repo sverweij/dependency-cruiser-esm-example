@@ -1,0 +1,29 @@
+{
+  "name": "dependency-cruiser-esm-example",
+  "version": "1.0.0",
+  "description": "Example of dependencies not being resolved to ES modules",
+  "main": "build/index.mjs",
+  "type": "module",
+  "scripts": {
+    "build": "rm -rf build && tsc --noEmit false",
+    "start": "node build/index.mjs",
+    "test": "npm run build && npm run start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jakesidsmith/dependency-cruiser-esm-example.git"
+  },
+  "author": "Jake 'Sid' Smith",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/jakesidsmith/dependency-cruiser-esm-example/issues"
+  },
+  "homepage": "https://github.com/jakesidsmith/dependency-cruiser-esm-example#readme",
+  "dependencies": {
+    "@types/node": "^18.17.19",
+    "@types/react": "^18.2.22",
+    "dependency-cruiser": "^14.0.0",
+    "react-jss": "^10.10.0",
+    "typescript": "^5.2.2"
+  }
+}
